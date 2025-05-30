@@ -1,0 +1,23 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://u3ybds2cdiqf"]
+
+[ext_resource type="Texture2D" uid="uid://bk3wx8ejn6wrw" path="res://imgbotones/flechaatras1.png" id="1_cwuh5"]
+[ext_resource type="Texture2D" uid="uid://dfq8rx7afkjr0" path="res://imgbotones/flechaatras3.png" id="2_47y80"]
+[ext_resource type="Texture2D" uid="uid://f2cyihq1wysd" path="res://imgbotones/flechaatras2.png" id="3_4wxld"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vingw"]
+texture = ExtResource("1_cwuh5")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hwse7"]
+texture = ExtResource("2_47y80")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6hv7r"]
+texture = ExtResource("1_cwuh5")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vycl8"]
+texture = ExtResource("3_4wxld")
+
+[resource]
+Button/styles/disabled = SubResource("StyleBoxTexture_vingw")
+Button/styles/hover = SubResource("StyleBoxTexture_hwse7")
+Button/styles/normal = SubResource("StyleBoxTexture_6hv7r")
+Button/styles/pressed = SubResource("StyleBoxTexture_vycl8")
