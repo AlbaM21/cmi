@@ -1,45 +1,32 @@
-## (Nombre del proyecto)
+Twin Revenge 
 
 Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de la Univesidad de Granada
 
 
 
-# 1 Datos 
 
 
+Twin Revenge
 
-**Titulo** : MI Proyecto(nombre)
+![logo](https://github.com/user-attachments/assets/63b0eee6-2c18-43c0-a448-437174b2dc25)
 
-**Web:**   (url github.io)
 
-**Autor:**  (Nombre apellidos)
+https://aru2112.itch.io/twinrevenge
 
-**Resumen** : Este proyecto busca contar las hitorias de migrantes jóvenes, siendo ellos mismos los protagonistas. Esta será una compilación de relatos y crónicas de sus experiencias, exponiendo su lucha de identidad y sentido de pertenencia, herencia migratoria, entre otros temas que abrirán un debate del tema.
+Alba Martín Sánchez
 
-**Estilo/género:**  Novela / juego / portfolio / documental... etc.
+ -Matt tiene muchos problemas con su hermana gemela, ayúdale a lo largo del día a superar los obstáculos que le trae la convivencia con ella. 
 
-**Logotipo** : (insertar imagen y breve justificación, si  tiene) 
-
-(insertar imágenes a resolucion de 100px alto)
-
-**Resolución:** 800x600px responsivo/o tamaño fijo (indicar la que has aplicado, y si es reescalable)
-
-**Probado en:**   (indicar dónde has probado que funciona: ej. Google Chrome / MS Edge... /móviles android )
+-Novela/Pin Pon
+-1152 x 658 px
+-Google Chrome
 
 **Tamaño proyecto:** 14MB 
 
-**Licencia** Este proyecto tiene una Licencia CC Reconocimiento Compartir igual (CC BY-SA)
 
-**Fecha** : 14/05/2020
-
-**Medios** (donde se tiene presencia relacionada):
-
-- Github:
-- Twitter
-- Instagram
+**Fecha** : 29/05/2025
 
 
-![girl](https://github.com/mgea/cmi20/blob/master/WalkingGirl_front01.png)
 
 # 2. Memoria del proyecto 
 
@@ -47,7 +34,8 @@ Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de 
 
 
 
-(narra brevemente lo que sucede en tu proyecto, puedes usar 3-4 imágenes de apoyo)
+![storyboard](https://github.com/user-attachments/assets/212de396-916d-4945-a30d-b6933325da45)
+
 
 
 
@@ -55,7 +43,8 @@ Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de 
 
 
 
-(imagen con las distintas pantallas de navegación, usa draw.io o cualquier programa de dibujo)
+
+![mapa](https://github.com/user-attachments/assets/cc4114bf-7d5f-48d7-9520-b3aeacd2a48f)
 
 
 
@@ -65,54 +54,52 @@ Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de 
 
 # 3. Metodología
 
-Metodología de desarrollo de productos multimedia basado en una metodología de UX (User Experience)
+
 
 
 
 ### Etapa 1: Ideación de proyecto
 
-**Investigación de campo** (propuestas inspiradoras para el proyecto)
+**Investigación de campo: propuestas que me han inspirado.**
 
-- Portfolio [Leonardi Web page](http://www.rleonardi.com/interactive-resume/) para idear cómo organizar el material
-- 
+- Juegos de arcade antiguos: Ej, Pong Game https://www.ponggame.org/
+- Animación y estética de los 2000s: Cartoon Network.
+ 
 
 
+**Motivación de la propuesta**
 
-**Motivación de la propuesta** 
-
-Este  proyecto es interesante porque ... 
+Este proyecto es interesante porque plantea una historia divertida y entretenida a la par de que para ir descubriéndola hay que superar ciertos minijuegos. Es un juego corto pero que en un futuro podría llegar a ser un proyecto más ambicioso y disfrutable. 
 
 
 
 **Publico / audiencia**
 
-- Orientado a 
-
+- Orientado a adolescentes, jovenes. 
 
 
 
 
 ### Etapa 2: Desarrollo / actividades realizadas
 
-(qué soluciones has planteado y cómo se han resuelto: juego, galería de fotos, grabación de video, etc.)
 
-- Juego. 
-- Video 
-- Instrucciones y ayuda al usuario 
-- Menús y elementos de navegación (botones)
-- etc.
+
+- Juego: Para crear el juego Pong he decidido hacer una CPU que actúe como rival, actualmente es muy complicado ganarle pero se plantearán más niveles a futuro. Previo al Pong hay una escena de introducción que hice utilizando dialogic y que funciona como puente entre el menú y el juego en si.  
+- Video: El video propuesto en la galería es una captura de mi proceso dibujando los personajes del juego en cámara rápida. 
+- Menús y elementos de navegación: Dibujé el logo del menú y los botones de este, después con la herramienta animation player pude hacer que aparecieran poco a poco. Los botones tienen temas personalizados.
+- Galería: En la galería se encuentran imágenes de los diferentes personajes del juego y un poco de su historia. 
 
 
 
 ### Etapa 3: Problemas identificados
 
-(que consideras que no  funciona correctamente y por qué )
+- La dificultad de la CPU se me hace un problema que todavía no he conseguido cambiar.
 
 
 
 # 4. Conclusiones 
 
-(explica brevemente tu valoración, problemas que has detectado y que te gustaría hacer o mejorar en el futuro )
+- Para mi aprender a utilizar Godot ha sido todo un reto, me considero bastante torpe para programar y ser resolutiva en cualquier programa de ordenador es una cosa que me cuesta especialmente. Pese a esto he conseguido hacer mucho más de lo que imaginaba poder hacer, ha sido muy commplicado pero al final creo que he sabido resolver a mi manera los problemas que se me iban planteando. El juego no es gran cosa y es muy corto pero estoy orgullosa de él, haber tenido esta experiencia me ha dado ganas de continuarlo y no dejarlo así.
 
 
 
@@ -124,23 +111,23 @@ Este  proyecto es interesante porque ...
 
 **Artículos y blogs ** 
 
-- Crofts, S., Fox, M., Retsema, A. and Williams, B. (2005) *Podcasting: A new technology in search of viable business models*First Monday, 10(9). https://doi.org/10.5210/fm.v10i9.1273. Recuperado el 8 de abril de 2020 de: https://journals.uic.edu/ojs/index.php/fm/article/view/1273/1193
+-Tutorial Pong: https://youtu.be/Xq9AyhX8HUc?si=sKjtIbO63ea9YSJf
+-Tutorial Dialogic: https://youtu.be/7PuPU0Mrl_g?si=5fNIBoWWZZRZgkiO
 
 **Recursos y materiales audiovisuales:**
 
-* Musica:  
-* Imágenes:  
-* Tipografía
+* Musica:  https://youtu.be/NxnrKiTlI3Y?si=zGVee_BLE9K59qug
+* Imágenes: Imagenes creadas por mi en procreate.
 
 **Herramientas utilizadas**
 
-- Hippani Animator 5.1
-- 
+- Godot Engine
+- Procreate
+- Da vinci Resolve
 
 
 
-(imagen de la licencia, copiar y pegar aquí la correcta)
 
-https://creativecommons.org/licenses/?lang=es
 
-Mayo 2023
+
+Mayo 2025
