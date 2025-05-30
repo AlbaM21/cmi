@@ -1,0 +1,257 @@
+[gd_scene load_steps=16 format=3 uid="uid://c8rv042tqbqka"]
+
+[ext_resource type="Script" uid="uid://psnu61f4b417" path="res://script/menupantalla.gd" id="1_acw2g"]
+[ext_resource type="Texture2D" uid="uid://bve8ss0dc0f63" path="res://PANTALLA.jpg" id="2_iik2c"]
+[ext_resource type="Texture2D" uid="uid://xvaxo3pj8wgu" path="res://TWIN.png" id="3_cf0dg"]
+[ext_resource type="Texture2D" uid="uid://h1r5m0cqsnrr" path="res://REVENGE.png" id="4_mom8p"]
+[ext_resource type="Theme" uid="uid://dk7tndxk4xt8x" path="res://themesbotones/botonpress.tres" id="5_wkb8p"]
+[ext_resource type="Theme" uid="uid://fgq1g2sb2fx" path="res://themesbotones/botongallery.tres" id="6_vvalw"]
+[ext_resource type="Theme" uid="uid://c5c8cow1ornr6" path="res://themesbotones/botoncredits.tres" id="7_h55i7"]
+[ext_resource type="Texture2D" uid="uid://dlaavnt276q88" path="res://gif1.png" id="8_wkb8p"]
+[ext_resource type="AudioStream" uid="uid://b8je740qwptgl" path="res://sonidos/menusound.mp3" id="9_cf0dg"]
+[ext_resource type="AudioStream" uid="uid://b7l7vhxftaip5" path="res://sonidos/sonidoboton.wav" id="9_mom8p"]
+[ext_resource type="Texture2D" uid="uid://di56ngfxgnfds" path="res://gif2.png" id="9_vvalw"]
+
+[sub_resource type="Animation" id="Animation_hadpi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Twin:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(493, -33)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/Revenge:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(491, 354)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/presss:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimationPlayer/gallery:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer/creditsbutton:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimationPlayer/AnimatedSprite2D:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_w3f4q"]
+resource_name = "menutitulo"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Twin:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(534, -100), Vector2(493, 333)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/Revenge:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.4, 2.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(472, 871), Vector2(491, 354)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/presss:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.0333333, 2.9, 3.53333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, false, true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimationPlayer/gallery:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.333333, 3.96667, 4.1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, false, true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer/creditsbutton:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.333333, 4.33333, 4.46667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, false, true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimationPlayer/AnimatedSprite2D:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.0666667, 4.5, 4.56667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2gcwl"]
+_data = {
+&"RESET": SubResource("Animation_hadpi"),
+&"menutitulo": SubResource("Animation_w3f4q")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h55i7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_wkb8p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_vvalw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_acw2g")
+
+[node name="Pantalla" type="Sprite2D" parent="."]
+position = Vector2(577, 328.75)
+scale = Vector2(0.973333, 1.02077)
+texture = ExtResource("2_iik2c")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_2gcwl")
+}
+
+[node name="Twin" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(493, -33)
+scale = Vector2(0.905, 0.935385)
+texture = ExtResource("3_cf0dg")
+
+[node name="Revenge" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(491, 354)
+scale = Vector2(1.04667, 1.14077)
+texture = ExtResource("4_mom8p")
+
+[node name="presss" type="Button" parent="AnimationPlayer"]
+visible = false
+offset_left = 698.0
+offset_top = 485.0
+offset_right = 998.0
+offset_bottom = 575.0
+theme = ExtResource("5_wkb8p")
+
+[node name="gallery" type="Button" parent="AnimationPlayer"]
+visible = false
+offset_left = 395.0
+offset_top = 532.0
+offset_right = 663.0
+offset_bottom = 571.0
+theme = ExtResource("6_vvalw")
+
+[node name="creditsbutton" type="Button" parent="AnimationPlayer"]
+visible = false
+offset_left = 395.0
+offset_top = 491.0
+offset_right = 666.0
+offset_bottom = 531.0
+theme = ExtResource("7_h55i7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimationPlayer"]
+visible = false
+texture_filter = 1
+position = Vector2(695, 68)
+scale = Vector2(0.304167, 0.327692)
+sprite_frames = SubResource("SpriteFrames_h55i7")
+autoplay = "default"
+frame = 1
+frame_progress = 1.0
+centered = false
+
+[node name="sonidobotonstream" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_mom8p")
+
+[node name="Menusound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_cf0dg")
+autoplay = true
+
+[node name="audiomenubucle" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_cf0dg")
+autoplay = true
+
+[connection signal="pressed" from="AnimationPlayer/presss" to="." method="_on_presss_pressed"]
+[connection signal="pressed" from="AnimationPlayer/gallery" to="." method="_on_gallery_pressed"]
+[connection signal="pressed" from="AnimationPlayer/creditsbutton" to="." method="_on_creditsbutton_pressed"]

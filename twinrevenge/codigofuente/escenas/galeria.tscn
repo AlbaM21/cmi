@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://dmao5q3wi773u"]
+
+[ext_resource type="Script" uid="uid://cdv4cexfhagg6" path="res://script/galeria.gd" id="1_t12tu"]
+[ext_resource type="Theme" uid="uid://dsbxax7q4ort2" path="res://themesbotones/flecharecta.tres" id="2_uo4b4"]
+[ext_resource type="Theme" uid="uid://u3ybds2cdiqf" path="res://themesbotones/flechaatras.tres" id="3_uo4b4"]
+[ext_resource type="Texture2D" uid="uid://hsyistcg3ex1" path="res://imgbotones/Arrow.png" id="4_youxc"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_t12tu")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1174.0
+offset_bottom = 665.0
+expand_mode = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_left = 42.0
+offset_top = 6.0
+offset_right = 1101.0
+offset_bottom = 685.0
+rotation = 0.00380621
+expand = true
+
+[node name="botonadelante" type="Button" parent="."]
+offset_left = 308.0
+offset_top = 539.0
+offset_right = 429.0
+offset_bottom = 637.0
+theme = ExtResource("2_uo4b4")
+
+[node name="botonatras" type="Button" parent="."]
+offset_left = -8.0
+offset_top = 540.0
+offset_right = 118.0
+offset_bottom = 630.0
+theme = ExtResource("3_uo4b4")
+
+[node name="botonmenu" type="Button" parent="."]
+offset_right = 124.0
+offset_bottom = 69.0
+icon = ExtResource("4_youxc")
+flat = true
+expand_icon = true
+
+[connection signal="pressed" from="botonadelante" to="." method="_on_botonadelante_pressed"]
+[connection signal="pressed" from="botonatras" to="." method="_on_botonatras_pressed"]
+[connection signal="pressed" from="botonmenu" to="." method="_on_botonmenu_pressed"]

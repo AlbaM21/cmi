@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqhhop7b3fqnu"]
+
+[ext_resource type="Script" uid="uid://bl6onewy1nabi" path="res://script/nododialogo.gd" id="1_vqdc3"]
+
+[node name="nododialogo" type="Node2D"]
+script = ExtResource("1_vqdc3")

@@ -1,0 +1,239 @@
+[gd_scene load_steps=13 format=3 uid="uid://bj8or2rmm55mf"]
+
+[ext_resource type="Theme" uid="uid://dhua7q7qcdx47" path="res://themesbotones/skip.tres" id="1_11psi"]
+[ext_resource type="Texture2D" uid="uid://riuubqxhfvyr" path="res://HABITACION.png" id="1_jhcfx"]
+[ext_resource type="Script" uid="uid://ckd8ken3knavx" path="res://escenas/skip.gd" id="2_8q4jw"]
+[ext_resource type="Texture2D" uid="uid://cxt2myqgrqqje" path="res://PUERTAABIERTA.png" id="2_lnvo3"]
+[ext_resource type="AudioStream" uid="uid://b7l7vhxftaip5" path="res://sonidos/sonidoboton.wav" id="3_6vfkb"]
+[ext_resource type="Texture2D" uid="uid://bhjqd0frapew6" path="res://PUERTACERRADA.jpg" id="3_8am0j"]
+[ext_resource type="Texture2D" uid="uid://chf2hsfduwytr" path="res://NEGRO.jpg" id="4_11psi"]
+[ext_resource type="AudioStream" uid="uid://b51p27e543oa5" path="res://sonidos/teasermusic.mp3" id="5_lnvo3"]
+
+[sub_resource type="GDScript" id="GDScript_dpxxx"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	$AnimationPlayer.play(\"teaser\")
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+
+func _on_animation_player_animation_finished(anim_name: StringName) -> void:
+	get_tree().change_scene_to_file(\"res://escenas/menupantalla.tscn\")
+
+
+
+	
+"
+
+[sub_resource type="Animation" id="Animation_7ufi4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/puerta:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/negro:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/puerta:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.496909, 0.468952)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimationPlayer/puertaopen:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.328677, 0.302621)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer/Habitacion:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.345363, 0.345363)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/skip:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+
+[sub_resource type="Animation" id="Animation_dk2oa"]
+resource_name = "teaser"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/puerta:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(3.43333, 4.33333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/negro:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/puerta:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.0333333, 2.43333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.496909, 0.468952), Vector2(0.332626, 0.313911)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimationPlayer/puertaopen:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 5.53333, 6.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.328677, 0.302621), Vector2(0.328677, 0.302621), Vector2(0.460499, 0.423992)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer/Habitacion:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.0333333, 5.5, 6.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.345363, 0.345363), Vector2(0.345363, 0.345363), Vector2(0.617994, 0.617994)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/skip:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_h0kys"]
+_data = {
+&"RESET": SubResource("Animation_7ufi4"),
+&"teaser": SubResource("Animation_dk2oa")
+}
+
+[node name="teaser" type="Node2D"]
+script = SubResource("GDScript_dpxxx")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_h0kys")
+}
+
+[node name="Habitacion" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(584, 382)
+scale = Vector2(0.345363, 0.345363)
+texture = ExtResource("1_jhcfx")
+
+[node name="puertaopen" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(573, 314)
+scale = Vector2(0.328677, 0.302621)
+texture = ExtResource("2_lnvo3")
+
+[node name="puerta" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(572.157, 304.75)
+scale = Vector2(0.496909, 0.468952)
+texture = ExtResource("3_8am0j")
+
+[node name="negro" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(547, 334)
+scale = Vector2(0.34122, 0.332258)
+texture = ExtResource("4_11psi")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_lnvo3")
+autoplay = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="skip" type="Button" parent="CanvasLayer"]
+offset_left = 874.0
+offset_top = 500.0
+offset_right = 1168.0
+offset_bottom = 731.0
+theme = ExtResource("1_11psi")
+expand_icon = true
+script = ExtResource("2_8q4jw")
+
+[node name="Sonidoboton" type="AudioStreamPlayer" parent="CanvasLayer/skip"]
+stream = ExtResource("3_6vfkb")
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="pressed" from="CanvasLayer/skip" to="." method="_on_skip_pressed"]
+[connection signal="pressed" from="CanvasLayer/skip" to="CanvasLayer/skip" method="_on_pressed"]

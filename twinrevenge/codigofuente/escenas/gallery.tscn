@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dp78gtwnjfdx8"]
+
+[ext_resource type="Texture2D" uid="uid://cya5e66yvjqc6" path="res://galleryfotos/mattrefsheet.JPG" id="1_ay20g"]
+[ext_resource type="Script" uid="uid://dxfumpidn5p1x" path="res://script/gallery.gd" id="2_31do6"]
+[ext_resource type="Theme" uid="uid://dsbxax7q4ort2" path="res://themesbotones/flecharecta.tres" id="3_31do6"]
+
+[node name="Mattrefsheet" type="Sprite2D"]
+position = Vector2(562.51, 323)
+scale = Vector2(0.27394, 0.26371)
+texture = ExtResource("1_ay20g")
+script = ExtResource("2_31do6")
+
+[node name="Button" type="Button" parent="."]
+offset_left = -1779.62
+offset_top = 868.378
+offset_right = -1239.62
+offset_bottom = 1327.38
+theme = ExtResource("3_31do6")
+expand_icon = true
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

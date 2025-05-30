@@ -1,0 +1,20 @@
+[background arg="res://NEGRO.jpg" fade="0.2"]
+MATT: ughhhhhh...
+join MATT center [animation="Bounce In"]
+MATT (matt.normal): ?
+MATT (matt.normal): ¿Dónde estoy?
+*CLICK 
+[background arg="res://dialogicosas/fondohabdialogo.jpg" fade="0.0"]
+MATT (matt.avergonzado): Ah, estoy en mi habitación...\
+Me he vuelto a quedar dormido, vaya tela. 
+*TOC TOC TOC 
+MATT (matt.normal): ¿Quién- 
+join agatha (agathaport) center
+agatha (agathaport): ¡Oye! que llegamos tarde al instituto por tu culpa. Parece mentira que seas mi hermano, eres un desastre...
+MATT (matt.avergonzado): ¿Quién te ha invitado a entrar en mi cuarto de todas formas? \
+En fin.. no te preocupes que en 2 minutos estoy listo... 
+agatha (agathaangry): ¡No, sabes qué hoy tenía que llegar temprano! Le había prometido a una amiga que la acompañaría a clase. Lo has estropeado TODO.  
+MATT (matt.normal): Oye deja de echarme la culpa de tus tonterías, me apuesto lo que sea a que no es para tanto. 
+agatha (agathaport): ¿Apuesta? Pues ahora que lo dices me parece perfecto una apuesta. Juguemos a al ping pong; si gano deberás hacerme los deberes durante lo que queda de curso, si ganas te dejaré en paz y haré las tareas de la casa que te corresponden. ¿Qué te parece? 
+- Juguemos
+	do Dialogic.end_timeline()
